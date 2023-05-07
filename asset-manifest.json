@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/furniture-shop-ts/static/js/main.4c6b29f1.js",
+    "main.js": "/furniture-shop-ts/static/js/main.89c03e30.js",
     "static/media/headersbg.png": "/furniture-shop-ts/static/media/headersbg.9aac71cf4c302b294e12.png",
     "static/media/about-us.jpg": "/furniture-shop-ts/static/media/about-us.32e7c0c37d194324945c.jpg",
     "static/media/greensofa.jpg": "/furniture-shop-ts/static/media/greensofa.a33141d30d010a6a536c.jpg",
@@ -8,9 +8,9 @@
     "static/media/chair.jpg": "/furniture-shop-ts/static/media/chair.dcd4d12d6d7a1db3a163.jpg",
     "static/media/chair2.jpg": "/furniture-shop-ts/static/media/chair2.ba3c831314e409b4b107.jpg",
     "index.html": "/furniture-shop-ts/index.html",
-    "main.4c6b29f1.js.map": "/furniture-shop-ts/static/js/main.4c6b29f1.js.map"
+    "main.89c03e30.js.map": "/furniture-shop-ts/static/js/main.89c03e30.js.map"
   },
   "entrypoints": [
-    "static/js/main.4c6b29f1.js"
+    "static/js/main.89c03e30.js"
   ]
 }
