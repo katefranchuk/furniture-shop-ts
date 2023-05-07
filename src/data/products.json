@@ -14,7 +14,7 @@
     "category": "accessories",
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
     "price": 7.35,
-    "image": "images/prod2.jpg",
+    "image": "https://images.squarespace-cdn.com/content/v1/58f28efa8419c273492faccd/1642199651121-9GYV3P0I6FKL1AVEIGKL/unsplash-image-zeGT9j4ltRA.jpg?format=500w",
     "count": 1
   },
   {
@@ -23,7 +23,7 @@
     "category": "furniture",
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
     "price": 5.35,
-    "image": "images/prod3.jpg",
+    "image": "https://i.pinimg.com/originals/ca/dc/3a/cadc3a9e3dfc03c296a91ba75778aa2c.jpg",
     "count": 1
   },
   {
@@ -32,7 +32,7 @@
     "category": "furniture",
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
     "price": 4.35,
-    "image": "images/prod3.jpg",
+    "image": "https://i.pinimg.com/originals/ca/dc/3a/cadc3a9e3dfc03c296a91ba75778aa2c.jpg",
     "count": 1
   },
   {
@@ -41,7 +41,7 @@
     "category": "sofas",
     "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
     "price": 8.35,
-    "image": "images/prod3.jpg",
+    "image": "https://i.pinimg.com/originals/ca/dc/3a/cadc3a9e3dfc03c296a91ba75778aa2c.jpg",
     "count": 1
   }
 ]

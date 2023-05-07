@@ -1,4 +1,4 @@
-import { styled, Theme, Typography, TypographyProps, css } from "@mui/material";
+import { styled, Theme, Typography, TypographyProps } from "@mui/material";
 import { NavLink } from "react-router-dom";
 
 export const HeaderElement = styled("header")<{ theme?: Theme }>(

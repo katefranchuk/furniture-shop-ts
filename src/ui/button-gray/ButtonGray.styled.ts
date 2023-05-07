@@ -11,12 +11,14 @@ export const BtnElement = styled("button")<{
   backgroundColor: isBgDark ? theme.colors.darkPrimary : theme.colors.lightGray,
   padding: "15px 0",
   color: isWhite ? theme.colors.white : theme.colors.darkPrimary,
-  transition: "background-color 0.3 ease-in-out",
+  transition: "background 0.3s ease-in-out",
+  border: `1px solid ${theme.colors.lightGray}`,
   [theme.breakpoints.down("sm")]: {
     maxWidth: "100%",
   },
   "&:hover": {
-    backgroundColor: isBgDark ? theme.colors.white : theme.colors.darkPrimary,
+    background: isBgDark ? theme.colors.white : theme.colors.darkPrimary,
     color: isWhite ? theme.colors.darkPrimary : theme.colors.white,
+    border: isBgDark ? `1px solid ${theme.colors.darkPrimary}` : "",
   },
 }));

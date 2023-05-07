@@ -2,6 +2,12 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { IProduct } from "../../interface/iproduct.interface";
 import axios from "axios";
 
+interface IOrder {
+  email: string;
+  name: string;
+  orderedProducts: IProduct[];
+}
+
 export const apiProducts = createAsyncThunk<IProduct[], string[]>(
   "products/apiProducts",
   async (categories: string[]) => {
@@ -13,5 +19,16 @@ export const apiProducts = createAsyncThunk<IProduct[], string[]>(
     );
 
     return filteredData;
+  }
+);
+
+export const postOrder = createAsyncThunk<IOrder, IOrder>(
+  "orders/postOrder",
+  async (order) => {
+    const { data } = await axios.post<IOrder>(
+      "https://6420a00e82bea25f6d04a4a9.mockapi.io/orders",
+      order
+    );
+    return data;
   }
 );

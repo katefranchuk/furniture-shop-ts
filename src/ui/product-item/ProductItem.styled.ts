@@ -2,8 +2,10 @@ import { styled, Theme, Typography, TypographyProps } from "@mui/material";
 
 export const Card = styled("li")<{ theme?: Theme }>(({ theme }) => ({
   img: {
+    maxHeight: "375px",
+    width: "100%",
     [theme.breakpoints.down("md")]: {
-      maxHeight: "360px",
+      maxHeight: "230px",
       minHeight: "227px",
     },
   },
@@ -28,4 +30,13 @@ export const CardBottom = styled("div")<{ theme?: Theme }>(({ theme }) => ({
 
 export const CardImageBlock = styled("div")<{ theme?: Theme }>(({ theme }) => ({
   position: "relative",
+
+  img: {
+    maxHeight: "340px",
+    width: "100%",
+    [theme.breakpoints.down("md")]: {
+      maxHeight: "230px",
+      minHeight: "227px",
+    },
+  },
 }));

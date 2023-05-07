@@ -1,7 +1,7 @@
 import { styled } from "@mui/material";
 
 export const EmptyBlockStyled = styled("div")({
-  minheight: "100vh",
+  minHeight: "calc(100vh - 500px)",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

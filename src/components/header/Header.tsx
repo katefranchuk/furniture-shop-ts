@@ -33,7 +33,6 @@ const Header: FC = () => {
       <Container maxWidth={"xl"}>
         <HeaderWrapper>
           <HeaderTop>
-            {isSm && <p>search</p>}
             <NavLink to="/">
               <HeaderLogo variant="accent3" component="h2">
                 Avion
