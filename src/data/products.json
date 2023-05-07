@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "The Dandy chair",
+    "category": "furniture",
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "price": 8.35,
+    "image": "https://assets.website-files.com/6268aafbc089aa63042971d5/6286ee0e5fef205a37a14a36_suchit-poojari-ljRiZl00n18-unsplash.jpg",
+    "count": 1
+  },
+  {
+    "id": "2",
+    "title": "Rustic Vase Set",
+    "category": "accessories",
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "price": 7.35,
+    "image": "images/prod2.jpg",
+    "count": 1
+  },
+  {
+    "id": "3",
+    "title": "The Bar chair",
+    "category": "furniture",
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "price": 5.35,
+    "image": "images/prod3.jpg",
+    "count": 1
+  },
+  {
+    "id": "4",
+    "title": "The Dandy chair",
+    "category": "furniture",
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "price": 4.35,
+    "image": "images/prod3.jpg",
+    "count": 1
+  },
+  {
+    "id": "5",
+    "title": "The Dandy sofa",
+    "category": "sofas",
+    "description": "A timeless design, with premium materials features as one of our most popular and iconic pieces. The dandy chair is perfect for any stylish living space with beech legs and lambskin leather upholstery.",
+    "price": 8.35,
+    "image": "images/prod3.jpg",
+    "count": 1
+  }
+]
