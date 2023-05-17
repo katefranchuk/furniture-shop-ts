@@ -35,7 +35,7 @@ export const OrderSummaryCard = styled("ul")<{ theme?: Theme }>(
     },
 
     [theme.breakpoints.down("sm")]: {
-      height: "calc(100vh - 700px)",
+      height: "calc(100vh - 600px)",
     },
     [theme.breakpoints.down(380)]: {
       height: "calc(100vh - 500px)",
