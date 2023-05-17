@@ -12,7 +12,7 @@ const OrderSummary: FC = () => {
       <h3>Order Summary</h3>
       <OrderSummaryCard>
         {items.map((product) => (
-          <OrderSummaryItem product={product} />
+          <OrderSummaryItem key={product.id} product={product} />
         ))}
       </OrderSummaryCard>
       <span>Total price £{totalPrice.toFixed(2)}</span>
