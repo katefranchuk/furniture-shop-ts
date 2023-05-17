@@ -5,14 +5,17 @@ import PopularProducts from "../components/popular-products/PopularProducts";
 import Preview from "../components/preview/Preview";
 import Products from "../components/products/Products";
 import Subscription from "../components/subscription/Subscription";
+import { useResponsive } from "../utils/responsive/ResponsiveContext";
 
 const Home: FC = () => {
+  const { isSm } = useResponsive();
+
   return (
     <>
       <Preview />
       <Features />
       <Products />
-      <PopularProducts />
+      {isSm && <PopularProducts />}
       <Subscription />
       <AboutUs />
     </>

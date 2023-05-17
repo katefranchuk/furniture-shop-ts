@@ -47,7 +47,7 @@ const CartItem: FC<CartItemProps> = ({ product }) => {
             />
           </div>
           <span style={{ textAlign: "right" }}>
-            £{Math.floor(product.price * product.count)}
+            £{(product.price * product.count).toFixed(2)}
           </span>
         </>
       ) : (

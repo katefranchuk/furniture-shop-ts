@@ -19,8 +19,9 @@ export const DetailsInner = styled("div")<{ theme?: Theme }>(({ theme }) => ({
 export const DetailsLeftColumn = styled("div")<{ theme?: Theme }>(
   ({ theme }) => ({
     img: {
-      maxWidth: "600px",
-      maxHeight: "681px",
+      width: "600px",
+      height: "500px",
+      objectFit: "contain",
       [theme.breakpoints.down("md")]: {
         maxWidth: "100%",
         minHeight: "250px",
@@ -61,3 +62,7 @@ export const DetailsFotterButtonsBlock = styled("div")<{ theme?: Theme }>(
     gap: "16px",
   })
 );
+
+export const DetailsBtnSx = {
+  border: "1px solid #2A254B",
+};

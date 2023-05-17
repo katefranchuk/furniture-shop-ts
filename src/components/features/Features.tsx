@@ -8,7 +8,7 @@ const Features: FC = () => {
   return (
     <FeatureSection>
       <Container maxWidth={"lg"}>
-        <FeatureTitle variant="text1" component="h3">
+        <FeatureTitle variant="accent3" component="h2">
           What makes our brand different
         </FeatureTitle>
         <FeatureWrapper>

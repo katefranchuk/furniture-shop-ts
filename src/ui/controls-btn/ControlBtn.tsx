@@ -38,6 +38,7 @@ const ControlBtn: FC<IControlBtnProps> = ({
     onMinus(productId);
     if (count <= 1) {
       dispatch(removeItem(productId));
+      document.body.style.overflow = "visible";
     }
   };
 

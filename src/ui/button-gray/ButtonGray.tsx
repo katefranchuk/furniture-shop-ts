@@ -6,6 +6,7 @@ interface IButtonGray {
   onClick?: () => void;
   isWhite?: boolean;
   isBgDark?: boolean;
+  sx?: {};
 }
 
 const ButtonGray: FC<IButtonGray> = ({
@@ -13,9 +14,10 @@ const ButtonGray: FC<IButtonGray> = ({
   onClick,
   isWhite = false,
   isBgDark = false,
+  sx,
 }) => {
   return (
-    <BtnElement onClick={onClick} isWhite={isWhite} isBgDark={isBgDark}>
+    <BtnElement onClick={onClick} isWhite={isWhite} isBgDark={isBgDark} sx={sx}>
       {children}
     </BtnElement>
   );

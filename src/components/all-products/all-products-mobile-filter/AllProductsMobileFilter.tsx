@@ -60,13 +60,6 @@ const AllProductsMobileFilter: FC = () => {
           ))}
         </Select>
       </FormControl>
-
-      <FormControl sx={{ m: 1, width: "100%" }} size="small">
-        <InputLabel>Price</InputLabel>
-        <Select>
-          <MenuItem>Thirty</MenuItem>
-        </Select>
-      </FormControl>
     </AllProductsMobileFilterWrapper>
   );
 };

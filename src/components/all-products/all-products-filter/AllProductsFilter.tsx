@@ -58,20 +58,6 @@ const AllProductsFilter: FC = () => {
               ))}
             </FormGroup>
           </div>
-          <div>
-            <ProductsFilterTitle component="h3" variant="accent5">
-              Price
-            </ProductsFilterTitle>
-            <FormGroup>
-              {labels.map((label) => (
-                <FormControlLabel
-                  key={label.id}
-                  control={<Checkbox />}
-                  label={label.label}
-                />
-              ))}
-            </FormGroup>
-          </div>
         </div>
       ) : (
         <AllProductsMobileFilter />

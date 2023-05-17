@@ -10,7 +10,7 @@ export const popularProducts = [
     price: 980,
   },
   {
-    id: "31",
+    id: "1",
     image: chair2,
     title: "The Poplar suede sofa",
     price: 980,

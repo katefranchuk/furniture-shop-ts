@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container } from "@mui/material";
 import { useResponsive } from "../../utils/responsive/ResponsiveContext";
 import { links } from "./header.links";
@@ -9,9 +9,9 @@ import {
   HeaderLogo,
   HeaderTop,
   HeaderWrapper,
-  Link,
   MenuList,
   Nav,
+  NavLinkStyled,
 } from "./Header.styled";
 import { BsCart3 } from "react-icons/bs";
 import { HiOutlineMenu } from "react-icons/hi";
@@ -55,7 +55,7 @@ const Header: FC = () => {
               <MenuList>
                 {links.map(({ title, path, id }) => (
                   <li key={id}>
-                    <Link to={path}>{title}</Link>
+                    <NavLinkStyled to={path}>{title}</NavLinkStyled>
                   </li>
                 ))}
               </MenuList>

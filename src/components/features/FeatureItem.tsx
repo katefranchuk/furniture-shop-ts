@@ -1,4 +1,5 @@
-import React, { FC } from "react";
+import { FC } from "react";
+import { FeatureItemStyled, FeatureItemTitle } from "./Feature.styled";
 
 interface IFeatureItems {
   data: {
@@ -11,11 +12,13 @@ interface IFeatureItems {
 
 const FeatureItem: FC<IFeatureItems> = ({ data }) => {
   return (
-    <li style={{ textAlign: "left" }}>
+    <FeatureItemStyled>
       {data.icon}
-      <h3>{data.title}</h3>
+      <FeatureItemTitle component="h3" variant="accent5">
+        {data.title}
+      </FeatureItemTitle>
       <p>{data.text}</p>
-    </li>
+    </FeatureItemStyled>
   );
 };
 

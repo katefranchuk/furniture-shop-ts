@@ -19,6 +19,7 @@ const CartCheckout: FC = () => {
   const onClickModal = () => {
     toggle();
     window.scrollTo(0, 0);
+    document.body.style.overflow = "hidden";
   };
 
   return (
@@ -28,7 +29,7 @@ const CartCheckout: FC = () => {
           Subtotal
         </CartCheckoutText>
         <CartCheckoutTotalNumber variant="accent3" component="span">
-          £{Math.floor(totalPrice)}
+          £{totalPrice.toFixed(2)}
         </CartCheckoutTotalNumber>
       </CartCheckoutTotal>
       <CartCheckoutTextSmall variant="text4" component="p">

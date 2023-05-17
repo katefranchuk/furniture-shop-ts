@@ -42,6 +42,7 @@ const OrderForm: FC<OrderFormProps> = ({ isActive, toggle }) => {
         await delay(2000);
         setOrderIsComplete(true);
         dispatch(clearItems());
+        document.body.style.overflow = "visible";
       } catch (error) {
         alert("Can't create the order, please try again later");
       }

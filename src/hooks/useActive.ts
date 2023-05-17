@@ -5,6 +5,7 @@ export const useActive = (initialState = false) => {
 
   const toggle = () => {
     setIsActive((current) => !current);
+    document.body.style.overflow = "visible";
   };
 
   const changeState = (value: boolean) => {

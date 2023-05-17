@@ -13,8 +13,8 @@ import {
   selectLikeItemById,
 } from "../../store/slices/favouritesSlice";
 import ButtonGray from "../../ui/button-gray/ButtonGray";
-import ControlBtn from "../../ui/controls-btn/ControlBtn";
 import {
+  DetailsBtnSx,
   DetailsFooter,
   DetailsFotterButtonsBlock,
   DetailsInner,
@@ -81,12 +81,6 @@ const ProductDetails: FC<IProductDetailsProps> = ({ details }) => {
               </DetailsProductText>
             </div>
             <DetailsFooter>
-              <ControlBtn
-                count={details.count}
-                productId={details.id}
-                onPlus={() => details.id}
-                onMinus={() => details.id}
-              />
               <DetailsFotterButtonsBlock>
                 <ButtonGray
                   children={addedCount ? "In Cart" : "Add to Cart"}
@@ -97,6 +91,7 @@ const ProductDetails: FC<IProductDetailsProps> = ({ details }) => {
                 <ButtonGray
                   children={isAddedLike ? "In Favourite" : "Add to Favourite"}
                   onClick={onClickLike}
+                  sx={DetailsBtnSx}
                 />
               </DetailsFotterButtonsBlock>
             </DetailsFooter>

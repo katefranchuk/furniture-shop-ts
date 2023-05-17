@@ -44,6 +44,11 @@ export const ProductTableCard = styled("div")<{ theme?: Theme }>(
     display: "flex",
     alignItems: "center",
     columnGap: "21px",
+
+    img: {
+      width: "109px",
+      height: "134px",
+    },
   })
 );
 

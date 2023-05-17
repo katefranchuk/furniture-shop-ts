@@ -50,14 +50,16 @@ export const MenuList = styled("ul")<{ theme?: Theme }>(({ theme }) => ({
   gap: "0 44px",
 }));
 
-export const Link = styled(NavLink)<{ theme?: Theme }>(({ theme }) => ({
-  transition: "borderBottom 0.3s ease-in-out",
+export const NavLinkStyled = styled(NavLink)<{ theme?: Theme }>(
+  ({ theme }) => ({
+    transition: "borderBottom 0.3s ease-in-out",
 
-  "&.active": {
-    borderBottom: `1px solid ${theme.colors.darkPrimary}`,
-  },
+    "&.active": {
+      borderBottom: `1px solid ${theme.colors.darkPrimary}`,
+    },
 
-  "&:hover": {
-    color: theme.colors.borderDark,
-  },
-}));
+    "&:hover": {
+      color: theme.colors.borderDark,
+    },
+  })
+);

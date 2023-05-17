@@ -9,6 +9,7 @@ export const FeatureTitle = styled(Typography)<
   TypographyProps & { theme?: Theme; component: string }
 >(({ theme, component }) => ({
   marginBottom: "51px",
+  color: theme.colors.darkPrimary,
 }));
 
 export const FeatureWrapper = styled("ul")<{
@@ -21,4 +22,24 @@ export const FeatureWrapper = styled("ul")<{
     gridTemplateColumns: "1fr",
     rowGap: "36px",
   },
+}));
+
+export const FeatureItemStyled = styled("li")<{
+  theme?: Theme;
+}>(({ theme }) => ({
+  textAlign: "left",
+
+  svg: {
+    width: "24px",
+    height: "24px",
+    display: "flex",
+    marginBottom: "16px",
+  },
+}));
+
+export const FeatureItemTitle = styled(Typography)<
+  TypographyProps & { theme?: Theme; component: string }
+>(({ theme, component }) => ({
+  marginBottom: "8px",
+  color: theme.colors.darkPrimary,
 }));
