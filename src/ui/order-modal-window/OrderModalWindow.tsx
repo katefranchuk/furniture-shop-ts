@@ -5,15 +5,18 @@ import { OrderWindow, OrderWindowDivider } from "./OrderModalWindow.styled";
 
 interface OrderModalWindowProps {
   toggle: () => void;
-  isActive: boolean;
+  setOrderIsComplete: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const OrderModalWindow: FC<OrderModalWindowProps> = ({ toggle, isActive }) => {
+const OrderModalWindow: FC<OrderModalWindowProps> = ({
+  toggle,
+  setOrderIsComplete,
+}) => {
   return (
     <OrderWindowDivider>
       <OrderWindow>
         <CloseButton onClick={toggle} />
-        <OrderForm toggle={toggle} isActive={isActive} />
+        <OrderForm setOrderIsComplete={setOrderIsComplete} />
       </OrderWindow>
     </OrderWindowDivider>
   );

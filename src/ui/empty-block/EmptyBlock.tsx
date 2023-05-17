@@ -1,12 +1,18 @@
 import { FC } from "react";
-import { EmptyBlockStyled } from "./EmptyBlock.styled";
+import { EmptyBlockStyled, EmptyBlockTitle } from "./EmptyBlock.styled";
 
 interface IEmptyBlock {
-  children: React.ReactNode;
+  title: string;
 }
 
-const EmptyBlock: FC<IEmptyBlock> = ({ children }) => {
-  return <EmptyBlockStyled>{children}</EmptyBlockStyled>;
+const EmptyBlock: FC<IEmptyBlock> = ({ title }) => {
+  return (
+    <EmptyBlockStyled>
+      <EmptyBlockTitle component="h2" variant="accent3">
+        {title}
+      </EmptyBlockTitle>
+    </EmptyBlockStyled>
+  );
 };
 
 export default EmptyBlock;

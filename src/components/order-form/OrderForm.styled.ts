@@ -1,4 +1,4 @@
-import { styled, Theme, Typography, TypographyProps } from "@mui/material";
+import { styled, Theme } from "@mui/material";
 
 export const OrderFormStyled = styled("div")<{ theme?: Theme }>(
   ({ theme }) => ({

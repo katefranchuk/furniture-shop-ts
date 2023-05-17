@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { Dispatch, FC, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../hooks/useActions";
 import { postOrder } from "../../store/api-products/apiProducts";
 import { clearItems, selectCart } from "../../store/slices/cartSlice";
@@ -12,19 +12,17 @@ import {
   OrderFormStyled,
 } from "./OrderForm.styled";
 
-interface OrderFormProps {
-  toggle: () => void;
-  isActive: boolean;
+interface IOrderFormProps {
+  setOrderIsComplete: Dispatch<React.SetStateAction<boolean>>;
 }
 
-const OrderForm: FC<OrderFormProps> = ({ isActive, toggle }) => {
+const OrderForm: FC<IOrderFormProps> = ({ setOrderIsComplete }) => {
   const dispatch = useAppDispatch();
   const { items } = useAppSelector(selectCart);
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [orderId, setOrderID] = useState(null);
-  const [isOrderComplete, setOrderIsComplete] = useState<boolean>(false);
   const [mail, setMail] = useState("");
   const [name, setName] = useState("");
+
   const delay = (ms: number) =>
     new Promise((resolve) => setTimeout(resolve, ms));
 

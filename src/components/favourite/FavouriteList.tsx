@@ -14,7 +14,7 @@ const FavouriteList: FC = () => {
   const { isSm } = useResponsive();
 
   if (!totalCount) {
-    return <EmptyBlock children={"Wish list is empty"} />;
+    return <EmptyBlock title={"Wish list is empty"} />;
   }
 
   return (

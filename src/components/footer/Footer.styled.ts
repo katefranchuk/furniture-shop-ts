@@ -71,3 +71,9 @@ export const FooterListTitle = styled(Typography)<
 >(({ theme }) => ({
   color: theme.colors.white,
 }));
+
+export const FooterCopyrightText = styled(Typography)<
+  TypographyProps & { theme?: Theme; component: string }
+>(({ theme }) => ({
+  color: theme.colors.white,
+}));

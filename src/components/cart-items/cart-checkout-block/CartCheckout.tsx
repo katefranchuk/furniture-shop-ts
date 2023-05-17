@@ -12,7 +12,11 @@ import {
   CartCheckoutTotalNumber,
 } from "./CartCheckoutBlock.styed";
 
-const CartCheckout: FC = () => {
+interface ICartCheckoutProps {
+  setOrderIsComplete: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const CartCheckout: FC<ICartCheckoutProps> = ({ setOrderIsComplete }) => {
   const { totalPrice } = useAppSelector(selectCart);
   const { isActive, toggle } = useActive();
 
@@ -41,7 +45,12 @@ const CartCheckout: FC = () => {
         isWhite
         onClick={onClickModal}
       />
-      {isActive && <OrderModalWindow toggle={toggle} isActive={isActive} />}
+      {isActive && (
+        <OrderModalWindow
+          toggle={toggle}
+          setOrderIsComplete={setOrderIsComplete}
+        />
+      )}
     </CartCheckoutBlock>
   );
 };

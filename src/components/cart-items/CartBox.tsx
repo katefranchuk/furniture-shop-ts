@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useAppSelector } from "../../hooks/useActions";
 import { selectCart } from "../../store/slices/cartSlice";
 import EmptyBlock from "../../ui/empty-block/EmptyBlock";
@@ -16,9 +16,14 @@ import {
 const CartBox = () => {
   const { items, totalPrice } = useAppSelector(selectCart);
   const { isSm } = useResponsive();
+  const [isOrderComplete, setOrderIsComplete] = useState<boolean>(false);
 
   if (!totalPrice) {
-    return <EmptyBlock children={"Cart is Empty"} />;
+    return (
+      <EmptyBlock
+        title={isOrderComplete ? "Thanks for order!" : "Cart is Empty"}
+      />
+    );
   }
 
   return (
@@ -45,7 +50,7 @@ const CartBox = () => {
           </ProductsListItem>
         </div>
         <ProductCardBottomChekout>
-          <CartCheckout />
+          <CartCheckout setOrderIsComplete={setOrderIsComplete} />
         </ProductCardBottomChekout>
       </Container>
     </section>

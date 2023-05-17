@@ -6,6 +6,7 @@ import MenuList from "../../ui/menu-list/MenuList";
 import { footerLinksMenu, footerLinksCategory } from "./footer.data";
 import {
   FooterCopyright,
+  FooterCopyrightText,
   FooterForm,
   FooterInner,
   FooterList,
@@ -61,8 +62,10 @@ const Footer: FC = () => {
         </FooterInner>
         <FooterCopyright>
           <FooterWrapper>
-            <p>Copyright 2022 Avion LTD</p>
-            <div></div>
+            <FooterCopyrightText component="p" variant="text4">
+              Copyright 2023 Kate Franchuk. All rights reserved. Based on the
+              template Avion LTD
+            </FooterCopyrightText>
           </FooterWrapper>
         </FooterCopyright>
       </Container>
